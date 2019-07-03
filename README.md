@@ -16,13 +16,13 @@ Realmを利用した簡単なiosアプリです。
 ## インストール手順
 
 1. Gitリポジトリのクローン
-  ```
-  git clone https://github.com/inouway/sampleRealm.git
-  ```
+    ```
+    git clone https://github.com/inouway/sampleRealm.git
+    ```
 1. ライブラリのインストール
-  ```
-  pod install
-  ```
+    ```
+    pod install
+    ```
 1. ライブラリ込みのプロジェクトファイルを開く  
-**白いファイル**を利用すること
+    **白いファイル**を利用すること
 
