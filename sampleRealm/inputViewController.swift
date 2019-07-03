@@ -15,7 +15,7 @@ class inputViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var button: UIButton!
     
-    //    この画面で追加または編集するTODO
+    //この画面で追加または編集するTODO
     var todo: Todo? = nil
     
     override func viewDidLoad() {

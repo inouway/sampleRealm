@@ -54,7 +54,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //        セルをスワイプして、削除が選ばれた場合
         if editingStyle == .delete {
             //let id = todos[indexPath.row].id
-            let id = todos[indexPath.row]
+            _ = todos[indexPath.row]
             
             //            IDを元に削除対象を取得
             let realm = try! Realm()
@@ -76,7 +76,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let todo = todos[indexPath.row]
         performSegue(withIdentifier: "toInput", sender: todo)
     }
-    //    遷移画面時に呼ばれwるメソッド
+    //    遷移画面時に呼ばれるメソッド
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //使うsegueがtoInputか判別
         if segue.identifier == "toInput"{

@@ -54,7 +54,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="PkX-B0-xoC">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="0ry-cf-Pr8">
+                        <barButtonItem key="rightBarButtonItem" style="done" id="0ry-cf-Pr8">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="w57-X1-Ryj">
                                 <rect key="frame" x="302" y="7" width="92" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -82,23 +82,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vsP-73-WfJ">
-                                <rect key="frame" x="20" y="392" width="374" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vsP-73-WfJ">
+                                <rect key="frame" x="0.0" y="438" width="414" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="didClickBtn:" destination="LOg-yv-LKe" eventType="touchUpInside" id="6uV-Q2-RLU"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eY3-Dg-koI">
-                                <rect key="frame" x="20" y="280" width="374" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eY3-Dg-koI">
+                                <rect key="frame" x="0.0" y="288" width="414" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eY3-Dg-koI" firstAttribute="top" secondItem="tGW-py-yxW" secondAttribute="top" constant="200" id="3Vk-EA-RWQ"/>
+                            <constraint firstItem="eY3-Dg-koI" firstAttribute="leading" secondItem="tGW-py-yxW" secondAttribute="leading" id="3dS-xq-j9Z"/>
+                            <constraint firstItem="tGW-py-yxW" firstAttribute="trailing" secondItem="eY3-Dg-koI" secondAttribute="trailing" id="CAX-49-5KW"/>
+                            <constraint firstItem="eY3-Dg-koI" firstAttribute="centerX" secondItem="NGx-X2-5JX" secondAttribute="centerX" id="Yds-S4-wyT"/>
+                            <constraint firstItem="vsP-73-WfJ" firstAttribute="top" secondItem="eY3-Dg-koI" secondAttribute="bottom" constant="120" id="tBk-Jn-eNn"/>
+                            <constraint firstItem="vsP-73-WfJ" firstAttribute="trailing" secondItem="tGW-py-yxW" secondAttribute="trailing" id="yQb-sI-sKD"/>
+                            <constraint firstItem="vsP-73-WfJ" firstAttribute="leading" secondItem="tGW-py-yxW" secondAttribute="leading" id="ybM-xg-syO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="tGW-py-yxW"/>
                     </view>
                     <connections>
